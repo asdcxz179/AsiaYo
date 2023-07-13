@@ -1,5 +1,9 @@
 # AsiaYo API 實作測驗
 
+### 系統環境
+**Laravel 9.52**
+**PHP 8.1**
+
 ### 匯率轉換API
 **EndPoint:** Your Domain
 
@@ -39,3 +43,12 @@ http://{endPoint}/api/currency
 | 200      | success     |
 | 422      | Request parameter error  |
 | 500      | System error  |
+
+### 單元測試
+
+```javascript
+php artisan test
+```
+測試檢查
+1. 未帶入正確參數，回傳狀態是否為正確/回傳是否為JSON格式
+2. 帶入正確參數，回傳狀態是否為正確/回傳是否為JSON格式/轉換匯率是否正確
